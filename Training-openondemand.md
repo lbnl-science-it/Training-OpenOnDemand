@@ -12,7 +12,7 @@ There will be a hands-on session at the end of this training
 
 Send your questions to chatroom
 
-Fill out [training survey](https://docs.google.com/forms/d/e/1FAIpQLSd2NifASkyCCQxAkClkEY0OrBaU72__VqXFeaL0Ys_wwrATIw/viewform)
+Fill out [training survey](https://docs.google.com/forms/d/e/1FAIpQLSc29rBefCHBE2ND8khddKyYSUP6WywxPWyQsImrXkSK_IbuMQ/viewform)
  
 
 # Outline
@@ -39,7 +39,7 @@ Fill out [training survey](https://docs.google.com/forms/d/e/1FAIpQLSd2NifASkyCC
 
 # OOD at the System Level
 
-<left><img src="figures/ood_system_view.png" width="80%"></left>
+<left><img src="figures/ood_system_view.png" width="90%"></left>
 
 
 # Services Provided
@@ -73,8 +73,8 @@ Fill out [training survey](https://docs.google.com/forms/d/e/1FAIpQLSd2NifASkyCC
 
 
 # Files
-<left><img src="figures/file.png" width="70%"></left>
-<left><img src="figures/files.png" width="70%"></left>
+<left><img src="figures/file.png" width="80%"></left>
+<left><img src="figures/files.png" width="80%"></left>
 
 # File/Directory Management
 
@@ -98,16 +98,16 @@ Fill out [training survey](https://docs.google.com/forms/d/e/1FAIpQLSd2NifASkyCC
   
 Provide the conventional cluster access: command-line/terminal
 
-<left><img src="figures/shell.png" width="70%"></left>
-<left><img src="figures/shell-cml.png" width="70%"></left>
+<left><img src="figures/shell.png" width="80%"></left>
+<left><img src="figures/shell-cml.png" width="80%"></left>
  
 
 # Job Management
 
 Job monitoring, composing and submission  
 
-<left><img src="figures/job.png" width="70%"></left>
-<left><img src="figures/jobs-active.png" width="70%"></left>
+<left><img src="figures/job.png" width="80%"></left>
+<left><img src="figures/jobs-active.png" width="80%"></left>
 
 
 # Job Composer
@@ -116,7 +116,7 @@ Job monitoring, composing and submission
 - From specific path
 - From selected job
 
-<left><img src="figures/job-create.png" width="60%"></left>
+<left><img src="figures/job-create.png" width="70%"></left>
 
 
 # Job Templates
@@ -124,7 +124,7 @@ Job monitoring, composing and submission
 - Provided by system admins
 - Defined by users
 
-<left><img src="figures/job-template.png" width="70%"></left>
+<left><img src="figures/job-template.png" width="80%"></left>
 
 # Job Submission Script 
 
@@ -148,8 +148,8 @@ Job monitoring, composing and submission
 
 # Interactive Apps
 
-<left><img src="figures/apps.png" width="70%"></left>
-<left><img src="figures/apps2.png" width="70%"></left>
+<left><img src="figures/apps.png" width="80%"></left>
+<left><img src="figures/apps2.png" width="80%"></left>
 
 
 # Jupyter Notebook App
@@ -159,7 +159,7 @@ Job monitoring, composing and submission
    - Interactive-mode-gpu, for exploration 
    - Compute mode: standarded Lawrencium partitions (e.g.: lr5,lr6,es1...)
 
-<left><img src="figures/jupyter.png" width="70%"></left>
+<left><img src="figures/jupyter.png" width="80%"></left>
 
 
 # Slurm Account, Partition, QOS from an Access Shell
@@ -179,7 +179,7 @@ perceus-00|scs|wfeinstein|es1|1||||||||||||es_debug,es_lowprio,es_normal|||
 
 # Jupyter Notebook  
 
-<left><img src="figures/notebook.png" width="70%"></left>
+<left><img src="figures/notebook.png" width="85%"></left>
 
 
 
@@ -187,17 +187,17 @@ perceus-00|scs|wfeinstein|es1|1||||||||||||es_debug,es_lowprio,es_normal|||
 
 - Enabled on GPU and CPU nodes
 
-<left><img src="figures/matlab.png" width="70%"></left>
+<left><img src="figures/matlab.png" width="80%"></left>
 
 
 # Matlab App Launch
 
-<left><img src="figures/matlab2.png" width="70%"></left>
+<left><img src="figures/matlab2.png" width="80%"></left>
 
 
 # Matlab App GUI
 
-<left><img src="figures/matlab3.png" width="70%"></left>
+<left><img src="figures/matlab3.png" width="80%"></left>
 
 
 # VMD App (Visual Molecular Dynamics)
@@ -209,7 +209,7 @@ A molecular visualization program for displaying, animating, and analyzing large
 
 # VMD Example
 
-<left><img src="figures/vmd-render.png" width="70%"></left>
+<left><img src="figures/vmd-render.png" width="75%"></left>
 
 
 # RStudio App
@@ -241,7 +241,7 @@ A molecular visualization program for displaying, animating, and analyzing large
 - Sending us tickets at hpcshelp@lbl.gov
 - More information, documents, tips of how to use LBNL Supercluster [http://scs.lbl.gov/](http://scs.lbl.gov)
 
-To improve our HPC training and services, please fill out [Training Survey](https://docs.google.com/forms/d/e/1FAIpQLSd2NifASkyCCQxAkClkEY0OrBaU72__VqXFeaL0Ys_wwrATIw/viewform)
+To improve our HPC training and services, please fill out [Training Survey](https://docs.google.com/forms/d/e/1FAIpQLSc29rBefCHBE2ND8khddKyYSUP6WywxPWyQsImrXkSK_IbuMQ/viewform)
 
 
 # Hands-on Exercise
