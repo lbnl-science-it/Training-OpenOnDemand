@@ -1,4 +1,4 @@
-% Open OnDemand HPC Training 
+% Open OnDemand Lawrencium HPC Training 
 % March 10, 2021
 % Wei Feinstein
 
@@ -19,7 +19,7 @@ Fill out [training survey](https://docs.google.com/forms/d/e/1FAIpQLSd2NifASkyCC
 
 - What is Open OnDemand on Lawrencium
 - How to access OOD  
-- Open OnDemand features
+- Features
    - File management
    - Cluster shell access
    - Job submission and monitoring
@@ -29,24 +29,30 @@ Fill out [training survey](https://docs.google.com/forms/d/e/1FAIpQLSd2NifASkyCC
 
 # What is Lawrencium Open OnDemand
 
-- Lawrencium Open OnDemand portal is based on Open OnDemand (https://openondemand.org/), an open source web platform 
-- Users can access HPC clusters and services with a web browser. 
+- Lawrencium OOD portal is based on an open source web platform [https://openondemand.org/](https://openondemand.org/)
+- The project is designed by Ohio Supercomputer Center
+- Users can access HPC cluster resources and services via a web browser 
 - Provide an intuitive interface and allows new users to be instantly productive at using the HPC resources for their research
-- Provide an alternative convenient way for experienced users to access the HPC resources. 
-- The portal has a flexible and extensible design that makes it easy to deploy new services as needed.
+- An alternative convenient way for experienced users to access the HPC resources. 
+- Flexible and extensible design that makes it easy to deploy new services as needed.
+
+
+# OOD at the System Level
+
+<left><img src="figures/ood_system_view.png" width="80%"></left>
 
 
 # Services Provided
 
-- File transfer and management
-- File editing
-- Shell access
+- Easy file transfer and management
+- Command-line shell access
 - Job submission and monitoring
-- Interactive applications
+- Interactive apps, graphic desktop environment
    - Juyter Notebook
    - RStudio
    - MatLab
    - VMD
+- More apps will be added 
   
 
 # How to Access
@@ -55,7 +61,7 @@ Fill out [training survey](https://docs.google.com/forms/d/e/1FAIpQLSd2NifASkyCC
 
 ### Authetication 
 
-<left><img src="figures/auth.png" width="80%"></left>
+<left><img src="figures/auth.png" width="60%"></left>
 
 - Username: Lawrencium username
 - Password: pin + OTP
@@ -70,9 +76,9 @@ Fill out [training survey](https://docs.google.com/forms/d/e/1FAIpQLSd2NifASkyCC
 <left><img src="figures/file.png" width="70%"></left>
 <left><img src="figures/files.png" width="70%"></left>
 
-# File/directory Management
+# File/Directory Management
 
-- Tradition 
+- Conventional command-line approach 
    - Linux file editing, vi, nano, emacs
    - File transfer: rsync, scp
    - Globus still an option of file transfer
@@ -90,14 +96,15 @@ Fill out [training survey](https://docs.google.com/forms/d/e/1FAIpQLSd2NifASkyCC
 
 # Cluster Shell Access
   
-Provide the conventional cluster access: command line/terminal
+Provide the conventional cluster access: command-line/terminal
 
 <left><img src="figures/shell.png" width="70%"></left>
 <left><img src="figures/shell-cml.png" width="70%"></left>
  
 
 # Job Management
-Monitoring, Job Composing and Submission  
+
+Job monitoring, composing and submission  
 
 <left><img src="figures/job.png" width="70%"></left>
 <left><img src="figures/jobs-active.png" width="70%"></left>
@@ -109,7 +116,7 @@ Monitoring, Job Composing and Submission
 - From specific path
 - From selected job
 
-<left><img src="figures/job-create.png" width="70%"></left>
+<left><img src="figures/job-create.png" width="60%"></left>
 
 
 # Job Templates
@@ -119,14 +126,24 @@ Monitoring, Job Composing and Submission
 
 <left><img src="figures/job-template.png" width="70%"></left>
 
+# Job Submission Script 
+
+<left><img src="figures/job-create.png" width="60%"></left>
+<right><img src="figures/job-script.png" width="40%"></right>
 
 # Job Submission Directory
 
 - Two ways to cope with the default directory created by the job composer.
-   - The default directory as the working directory of your job. This means you need to upload all input files to that directory before you can click the submit button. This can be easily done by clicking 'Open Dir' right beneath the job script contents. A file explorer will open the job directory in a new tab where you can do file transfers.
-   - if you already have the input files stored somewhere in the cluster and don't want to move them around, or you prefer to have an organized directories by yourself, you can simply add one command line in the job script before any other command line, where /path/to/job_working_dir is the directory you want all the commands to be executed:
-
-`cd /path/to/job_working_dir`
+   - The default directory as the working directory of your job. 
+   - `/global/home/users/wfeinstein/ondemand/data/sys/myjobs/projects/default`
+   - You need to upload all input files to that directory before you can click the submit button. 
+   - This can be done by clicking 'Open Dir' right beneath the job script contents. 
+   - A file explorer will open the job directory in a new tab where you can do file transfers.
+   
+   - Have the input files stored somewhere in the cluster and don't want to move them around
+   - Prefer to have an organized directories by yourself, such as home or scratch...
+   - Add one command line in your job script
+   - `cd /path/to/job_working_dir`
 
 
 # Interactive Apps
@@ -160,13 +177,9 @@ perceus-00|scs|wfeinstein|es1|1||||||||||||es_debug,es_lowprio,es_normal|||
 ...
 ```
 
-# Jupyter Notebook GUI 
+# Jupyter Notebook  
 
-<left><img src="figures/jupyter2.png" width="70%"></left>
-
-Kernels:
-- python2, 3
-- TF
+<left><img src="figures/notebook.png" width="70%"></left>
 
 
 
@@ -187,44 +200,37 @@ Kernels:
 <left><img src="figures/matlab3.png" width="70%"></left>
 
 
+# VMD App (Visual Molecular Dynamics)
+
+A molecular visualization program for displaying, animating, and analyzing large biomolecular systems using 3-D graphics and built-in scripting.
+
+<left><img src="figures/vmd.png" width="90%"></left>
+
+
+# VMD Example
+
+<left><img src="figures/vmd-render.png" width="70%"></left>
+
+
 # RStudio App
 
-<left><img src="figures/r.png" width="70%"></left>
+<left><img src="figures/r.png" width="90%"></left>
 
 # RStudio GUI
 
-
-# VMD App
-
-<left><img src="figures/vmd.png" width="70%"></left>
+<left><img src="figures/r3.png" width="100%"></left>
 
 
 # Log out and Cleanup
 
-Log out
-- To properly log out the portal, you must do two things: (1) log out the portal by clicking 'Log out' from the top navigation bar; (2) close the browser to completely terminate the session.
-- Be aware that only logout of the portal is not enough. You must also close the entire browser (not just the tab), a side effect of CAS. This is very important if you are using a public computer.
+- Log out the portal properly
+   - Clicking 'Log out' from the top navigation bar; 
 
 - Cleanup
-The portal stores temporary files for interactive apps in $HOME/ondemand/data/sys/dashboard/. Although the disk space used by those files accumulate slowly, it is a good habit to clean this directory periodically.
-
-   rm -rf $HOME/ondemand/data/sys/dashboard/batch_connect/sys/*
-
-
-# Open Ondemand 
-
-- Single web point of entry to Lawrencium supercluster
-- Allow access to Lawrencium compute resources 
-- Supercomputer access 					
-  - File browser: file editing, data transfer
-  - Shell command line access - terminal
-- Monitor jobs:/?
-- Interactive applications: Jupyter notebooks, MatLab, RStudio...
-- Jupyter notebook  
-   - Two partitions, including 4 CPU nodes and 1 GPU node, for code exploration
-   - Access to all Lawrencium partitions for running computing jobs
-- Sever: [https://lrc-ondemand.lbl.gov/](https://lrc-ondemand.lbl.gov/)
-  - Intel Xeon Gold processor with 32 cores, 96 GB RAM
+   - The portal stores temporary files for interactive apps in $HOME/ondemand/data/sys/dashboard/. 
+   - It is a good habit to clean this directory periodically.
+   - 
+   `rm -rf $HOME/ondemand/data/sys/dashboard/batch_connect/sys/*`
 
 
 # Getting help
