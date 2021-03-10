@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="March 10, 2021" />
+  <title>Open OnDemand HPC Training</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Open OnDemand HPC Training</h1>
+<p class="author">March 10, 2021</p>
+<p class="date">Wei Feinstein</p>
+</header>
+<h1 id="introduction">Introduction</h1>
+<p>Slides and sample codes can be found on github <a href="https://github.com/lbnl-science-it/Training-OpenOnDemand">https://github.com/lbnl-science-it/Training-OpenOnDemand</a></p>
+<p>Video will be posted</p>
+<p>There will be a hands-on session at the end of this training</p>
+<p>Send your questions to chatroom</p>
+<p>Fill out <a href="https://docs.google.com/forms/d/e/1FAIpQLSd2NifASkyCCQxAkClkEY0OrBaU72__VqXFeaL0Ys_wwrATIw/viewform">training survey</a></p>
+<h1 id="outline">Outline</h1>
+<ul>
+<li>What is Open OnDemand on Lawrencium</li>
+<li>How to access OOD<br />
+</li>
+<li>Open OnDemand features
+<ul>
+<li>File management</li>
+<li>Cluster shell access</li>
+<li>Job submission and monitoring</li>
+<li>Interactive apps</li>
+</ul></li>
+<li>Hands-on exercises</li>
+</ul>
+<h1 id="what-is-lawrencium-open-ondemand">What is Lawrencium Open OnDemand</h1>
+<ul>
+<li>Lawrencium Open OnDemand portal is based on Open OnDemand (https://openondemand.org/), an open source web platform</li>
+<li>Users can access HPC clusters and services with a web browser.</li>
+<li>Provide an intuitive interface and allows new users to be instantly productive at using the HPC resources for their research</li>
+<li>Provide an alternative convenient way for experienced users to access the HPC resources.</li>
+<li>The portal has a flexible and extensible design that makes it easy to deploy new services as needed.</li>
+</ul>
+<h1 id="services-provided">Services Provided</h1>
+<ul>
+<li>File transfer and management</li>
+<li>File editing</li>
+<li>Shell access</li>
+<li>Job submission and monitoring</li>
+<li>Interactive applications
+<ul>
+<li>Juyter Notebook</li>
+<li>RStudio</li>
+<li>MatLab</li>
+<li>VMD</li>
+</ul></li>
+</ul>
+<h1 id="how-to-access">How to Access</h1>
+<p><a href="https://lrc-ondemand.lbl.gov/">https://lrc-ondemand.lbl.gov/</a></p>
+<h3 id="authetication">Authetication</h3>
+<p><left><img src="figures/auth.png" width="80%"></left></p>
+<ul>
+<li>Username: Lawrencium username</li>
+<li>Password: pin + OTP</li>
+</ul>
+<h1 id="dashboard">Dashboard</h1>
+<p><left><img src="figures/dashboard.png" width="80%"></left></p>
+<h1 id="files">Files</h1>
+<p><left><img src="figures/file.png" width="70%"></left> <left><img src="figures/files.png" width="70%"></left></p>
+<h1 id="filedirectory-management">File/directory Management</h1>
+<ul>
+<li>Tradition
+<ul>
+<li>Linux file editing, vi, nano, emacs</li>
+<li>File transfer: rsync, scp</li>
+<li>Globus still an option of file transfer</li>
+</ul></li>
+<li>New avenue to manage files/dirs
+<ul>
+<li>Viewing files</li>
+<li>Text editing</li>
+<li>Copy/Paste</li>
+<li>Renaming files</li>
+<li>Creating files</li>
+<li>Creating directories</li>
+<li>Deleting files</li>
+<li>File upload/download</li>
+</ul></li>
+</ul>
+<h1 id="cluster-shell-access">Cluster Shell Access</h1>
+<p>Provide the conventional cluster access: command line/terminal</p>
+<p><left><img src="figures/shell.png" width="70%"></left> <left><img src="figures/shell-cml.png" width="70%"></left></p>
+<h1 id="job-management">Job Management</h1>
+<p>Monitoring, Job Composing and Submission</p>
+<p><left><img src="figures/job.png" width="70%"></left> <left><img src="figures/jobs-active.png" width="70%"></left></p>
+<h1 id="job-composer">Job Composer</h1>
+<ul>
+<li>From templates</li>
+<li>From specific path</li>
+<li>From selected job</li>
+</ul>
+<p><left><img src="figures/job-create.png" width="70%"></left></p>
+<h1 id="job-templates">Job Templates</h1>
+<ul>
+<li>Provided by system admins</li>
+<li>Defined by users</li>
+</ul>
+<p><left><img src="figures/job-template.png" width="70%"></left></p>
+<h1 id="job-submission-directory">Job Submission Directory</h1>
+<ul>
+<li>Two ways to cope with the default directory created by the job composer.
+<ul>
+<li>The default directory as the working directory of your job. This means you need to upload all input files to that directory before you can click the submit button. This can be easily done by clicking ‘Open Dir’ right beneath the job script contents. A file explorer will open the job directory in a new tab where you can do file transfers.</li>
+<li>if you already have the input files stored somewhere in the cluster and don’t want to move them around, or you prefer to have an organized directories by yourself, you can simply add one command line in the job script before any other command line, where /path/to/job_working_dir is the directory you want all the commands to be executed:</li>
+</ul></li>
+</ul>
+<p><code>cd /path/to/job_working_dir</code></p>
+<h1 id="interactive-apps">Interactive Apps</h1>
+<p><left><img src="figures/apps.png" width="70%"></left> <left><img src="figures/apps2.png" width="70%"></left></p>
+<h1 id="jupyter-notebook-app">Jupyter Notebook App</h1>
+<ul>
+<li>Three types of use:
+<ul>
+<li>Interactive-mode, for exploration</li>
+<li>Interactive-mode-gpu, for exploration</li>
+<li>Compute mode: standarded Lawrencium partitions (e.g.: lr5,lr6,es1…)</li>
+</ul></li>
+</ul>
+<p><left><img src="figures/jupyter.png" width="70%"></left></p>
+<h1 id="slurm-account-partition-qos-from-an-access-shell">Slurm Account, Partition, QOS from an Access Shell</h1>
+<pre><code>sacctmgr show association user=wfeinstein -p
+
+Cluster|Account|User|Partition|Share|Priority|GrpJobs|GrpTRES|GrpSubmit|GrpWall|GrpTRESMins|MaxJobs|MaxTRES|MaxTRESPerNode|MaxSubmit|MaxWall|MaxTRESMins|QOS|Def QOS|GrpTRESRunMins|
+perceus-00|pc_scs|wfeinstein|lr6|1||||||||||||lr_debug,lr_lowprio,lr_normal|||
+perceus-00|ac_test|wfeinstein|lr5|1||||||||||||lr_debug,lr_lowprio,lr_normal|||
+perceus-00|pc_test|wfeinstein|lr4|1||||||||||||lr_debug,lr_lowprio,lr_normal|||
+perceus-00|pc_test|wfeinstein|lr_bigmem|1||||||||||||lr_debug,lr_lowprio,lr_normal|||
+perceus-00|lr_test|wfeinstein|lr3|1||||||||||||condo_test|||
+perceus-00|scs|wfeinstein|es1|1||||||||||||es_debug,es_lowprio,es_normal|||
+...</code></pre>
+<h1 id="jupyter-notebook-gui">Jupyter Notebook GUI</h1>
+<p><left><img src="figures/jupyter2.png" width="70%"></left></p>
+<p>Kernels: - python2, 3 - TF</p>
+<h1 id="matlab-app">Matlab App</h1>
+<ul>
+<li>Enabled on GPU and CPU nodes</li>
+</ul>
+<p><left><img src="figures/matlab.png" width="70%"></left></p>
+<h1 id="matlab-app-launch">Matlab App Launch</h1>
+<p><left><img src="figures/matlab2.png" width="70%"></left></p>
+<h1 id="matlab-app-gui">Matlab App GUI</h1>
+<p><left><img src="figures/matlab3.png" width="70%"></left></p>
+<h1 id="rstudio-app">RStudio App</h1>
+<p><left><img src="figures/r.png" width="70%"></left></p>
+<h1 id="rstudio-gui">RStudio GUI</h1>
+<h1 id="vmd-app">VMD App</h1>
+<p><left><img src="figures/vmd.png" width="70%"></left></p>
+<h1 id="log-out-and-cleanup">Log out and Cleanup</h1>
+<p>Log out - To properly log out the portal, you must do two things: (1) log out the portal by clicking ‘Log out’ from the top navigation bar; (2) close the browser to completely terminate the session. - Be aware that only logout of the portal is not enough. You must also close the entire browser (not just the tab), a side effect of CAS. This is very important if you are using a public computer.</p>
+<ul>
+<li><p>Cleanup The portal stores temporary files for interactive apps in $HOME/ondemand/data/sys/dashboard/. Although the disk space used by those files accumulate slowly, it is a good habit to clean this directory periodically.</p>
+<p>rm -rf $HOME/ondemand/data/sys/dashboard/batch_connect/sys/*</p></li>
+</ul>
+<h1 id="open-ondemand">Open Ondemand</h1>
+<ul>
+<li>Single web point of entry to Lawrencium supercluster</li>
+<li>Allow access to Lawrencium compute resources</li>
+<li>Supercomputer access
+<ul>
+<li>File browser: file editing, data transfer</li>
+<li>Shell command line access - terminal</li>
+</ul></li>
+<li>Monitor jobs:/?</li>
+<li>Interactive applications: Jupyter notebooks, MatLab, RStudio…</li>
+<li>Jupyter notebook
+<ul>
+<li>Two partitions, including 4 CPU nodes and 1 GPU node, for code exploration</li>
+<li>Access to all Lawrencium partitions for running computing jobs</li>
+</ul></li>
+<li>Sever: <a href="https://lrc-ondemand.lbl.gov/">https://lrc-ondemand.lbl.gov/</a>
+<ul>
+<li>Intel Xeon Gold processor with 32 cores, 96 GB RAM</li>
+</ul></li>
+</ul>
+<h1 id="getting-help">Getting help</h1>
+<ul>
+<li>Virtual Office Hours:
+<ul>
+<li>Time: 10:30am - noon (Wednesdays)</li>
+<li>Online <a href="https://docs.google.com/forms/d/e/1FAIpQLScBbNcr0CbhWs8oyrQ0pKLmLObQMFmYseHtrvyLfOAoIInyVA/viewform">request</a></li>
+</ul></li>
+<li>Sending us tickets at hpcshelp@lbl.gov</li>
+<li>More information, documents, tips of how to use LBNL Supercluster <a href="http://scs.lbl.gov">http://scs.lbl.gov/</a></li>
+</ul>
+<p>To improve our HPC training and services, please fill out <a href="https://docs.google.com/forms/d/e/1FAIpQLSd2NifASkyCCQxAkClkEY0OrBaU72__VqXFeaL0Ys_wwrATIw/viewform">Training Survey</a></p>
+<h1 id="hands-on-exercise">Hands-on Exercise</h1>
+<p>Open Ondemand Navigation</p>
+<p><a href="https://lrc-ondemand.lbl.gov/">https://lrc-ondemand.lbl.gov/</a></p>
+</body>
+</html>
