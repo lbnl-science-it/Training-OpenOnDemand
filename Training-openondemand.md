@@ -59,7 +59,7 @@ Fill out [training survey](https://docs.google.com/forms/d/e/1FAIpQLSc29rBefCHBE
 
 [https://lrc-ondemand.lbl.gov/](https://lrc-ondemand.lbl.gov/)
 
-### Authetication 
+### Authentication 
 
 <left><img src="figures/auth.png" width="60%"></left>
 
